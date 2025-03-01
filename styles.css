@@ -17,7 +17,7 @@ font-family: Bell MT;
 
 h2{
 
-color: goldenrod;
+color: rgb(168, 121, 0);
 
 }
 
@@ -31,18 +31,21 @@ font-weight: bold;
 #buscarObra{
 
 border: 2px solid goldenrod;
-width: 80%;
-padding: 10px;
-height: 100px;
+height: auto;
+padding: 20px;
+padding-top: 30px; 
+background: rgb(151, 0, 0);
 
 }
 
 #resultados
 {
-    margin-top: 20px;
+    margin-top: 30px;
     border: 2px solid goldenrod;
-    width: 80%;
-    padding: 10px;
+    height: auto;
+    padding: 20px;
+    padding-top: 30px; 
+    background: rgb(151, 0, 0);   
 }
 
 #encabezado
@@ -55,7 +58,7 @@ gap: 20px;
 
 }
 
-H4{
+h4{
 
 color: goldenrod;
 
@@ -111,4 +114,88 @@ button{
     color:rgb(173, 0, 0);
     font-weight: bold;
     border: inherit;
+    height: 30px;
+    width: 100px;
 }
+
+#spam{
+
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: rgb(151, 0, 0);
+    padding: 0 10px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+   font-size: 24px;
+}
+.contenedor {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.contenedor2 {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: auto;
+}
+
+#spam2{
+
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background: rgb(151, 0, 0);
+    padding: 0 10px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+   font-size: 24px;
+
+}
+
+#Ptotal,#total{
+
+color :rgb(0, 255, 0);
+font-size: 20px;
+text-align: center;
+}
+
+u{
+    text-decoration: underline;
+    text-decoration-thickness: 3px; 
+
+}
+
+#titulo{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 5%;
+}
+
+h2{
+
+margin-top: -4%;    
+
+}
+
+#buscarNUMOBRA{
+
+width: 7%;    
+
+}
+
+#buscarNumbtn{
+
+margin-left: 60%;    
+
+}
+
+#buscarTbtn{
+
+    margin-left: 40.7%;    
+    
+    }

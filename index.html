@@ -8,13 +8,21 @@
 <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
+<div id="titulo">
 <h1>Terry's<img src="maza.png" alt="maza" width="100"  height="100">Auctions</h1>
-<h2>Calle del Prado 150  .  Madrid  .  Spain</h2>
-<div id="buscarObra">
+<pre><h2>Calle del Prado,150   .   Madrid   .   Spain</h2><pre>
+</div>
+<div class="contenedor">
 
-<label>Numero Obra : </label>
-<input type="text" id="buscarNUMOBRA">
-<button id="buscarNumbtn" onclick="f_buscarNUM()">Buscar</button><br><br>
+<div id="buscarObra">
+<span id="spam">BUSCAR OBRAS EN SUBASTA</span>
+
+
+<div  id="buscar1">
+    <label>Numero Obra : </label>
+    <input type="text" id="buscarNUMOBRA">
+    <button id="buscarNumbtn" onclick="f_buscarNUM()">Buscar</button><br><br></div>
+
 
 <label for="">Pictorica</label>
 <input type="radio" id="pictorica" name="tObra" value="Pictorica">
@@ -28,18 +36,21 @@
 <label for="">Literaria</label>
 <input type="radio" id="literaria" name="tObra" value="Literaria">
 
-<button id="buscarNumbtn" onclick="f_buscarTIPO()">Buscar</button>
-<button id="buscarNumbtn" onclick="f_limpiar()">Reset</button><br><br>
+<button id="buscarTbtn" onclick="f_buscarTIPO()">Buscar</button>
+<button id="buscarTlbtn" onclick="f_limpiar()">Reset</button><br><br>
 </div>
 
+</div>
+<div class="contenedor2">
 <div id="resultados">
 
+<span id="spam2">RESULTADOS DE BUSQUEDA</span>
 <div id="encabezado">
-<div id="e1"><h4>NUM OBRA</h4></div>
-<div id="e2"><h4>LOTE</h4></div>
-<div id="e3"><h4>NOMBRE</h4></div>
-<div id="e4"><h4>PRECIO SAL</h4></div>
-<div id="e5"><h4>CATEGORIA</h4></div>  
+<div id="e1"><h4><u>NUM OBRA</u></h4></div>
+<div id="e2"><h4><u>LOTE</u></h4></div>
+<div id="e3"><h4><u>NOMBRE</u></h4></div>
+<div id="e4"><h4><u>PRECIO SAL</u></h4></div>
+<div id="e5"><h4><u>CATEGORIA</u></h4></div>  
 </div>
 
 <div id="fila">
@@ -51,7 +62,7 @@
 </div>
 
 <div id="Ptotal">
-<h4>Total:<p id="total"></p></h4>
+<p id="total"></p>
 <h5 id="total"></h5>    
 
 </div>

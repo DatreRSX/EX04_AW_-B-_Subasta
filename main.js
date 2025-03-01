@@ -70,7 +70,7 @@ function f_buscarTIPO(){
     document.getElementById("Rpreciosal").innerHTML += tabla[sumador1][3]+"<br>  <br>";
     document.getElementById("Rcategoria").innerHTML += tabla[sumador1][4]+"<br> <br>";
     precio = precio + parseInt(tabla[sumador1][3]); 
-    document.getElementById("total").innerHTML=precio+"€"
+    document.getElementById("total").innerHTML="Total: "+precio+"€"
 }
     sumador1++;
     }
