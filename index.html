@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Subasta  Terry</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h1>Terry's<img src="maza.png" alt="maza" width="100"  height="100">Auctions</h1>
+<h2>Calle del Prado 150  .  Madrid  .  Spain</h2>
+<div id="buscarObra">
+
+<label>Numero Obra : </label>
+<input type="text" id="buscarNUMOBRA">
+<button id="buscarNumbtn" onclick="f_buscarNUM()">Buscar</button><br><br>
+
+<label for="">Pictorica</label>
+<input type="radio" id="pictorica" name="tObra">
+
+<label for="">Musical</label>
+<input type="radio" id="musical" name="tObra">
+
+<label for="">Escultorica</label>
+<input type="radio" id="escultorica" name="tObra">
+
+<label for="">Literaria</label>
+<input type="radio" id="literaria" name="tObra">
+
+<button id="buscarNumbtn" onclick="f_buscarTIPO()">Buscar</button>
+<button id="buscarNumbtn" onclick="f_limpiar()">Reset</button><br><br>
+</div>
+
+<div id="resultados">
+
+<div id="encabezado">
+<div id="e1"><h4>NUM OBRA</h4></div>
+<div id="e2"><h4>LOTE</h4></div>
+<div id="e3"><h4>NOMBRE</h4></div>
+<div id="e4"><h4>PRECIO SAL</h4></div>
+<div id="e5"><h4>CATEGORIA</h4></div>  
+</div>
+
+<div id="fila">
+<div id="f1"><p id="RnumObra"></p></div>    
+<div id="f2"><p id="Rlote"></p></div>    
+<div id="f3"><p id="Rnombre"></p></div>    
+<div id="f4"><p id="Rpreciosal"></p></div>    
+<div id="f5"><p id="Rcategoria"></p></div>    
+</div>
+
+<div id="total">
+
+<h5 id="total"></h5>    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+
+
+</body>
+</html>
