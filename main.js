@@ -10,7 +10,6 @@ tabla[7] = ["0007","074","Las Meninas","194000","Pictorica"]
 tabla[8] = ["0008","074","Disco Bee Gees","345536","Musical"]
 tabla[9] = ["0009","074","Mohai","32070","Escultorica"]
 
-
 function f_buscarNUM(){
 f_limpiar()
 var sumador = 0
@@ -39,34 +38,52 @@ window.alert("No encontrado")
 function f_buscarTIPO(){
     f_limpiar()
     var sumador1 = 0
-    var numOBRA = document.getElementById("buscarNUMOBRA").value;
-    
+    var pictorica  = document.getElementById("pictorica").value;
+    var musical = document.getElementById("musical").value;
+    var escultorica = document.getElementById("escultorica").value;
+    var literaria = document.getElementById("literaria").value;
+    var resultado = 0;
+    var precio = 0 
+
+    if (document.getElementById("pictorica").checked ) {
+    resultado = pictorica
+    };
+
+    if (document.getElementById("musical").checked ) {
+        resultado = musical
+    };
+
+    if (document.getElementById("escultorica").checked ) {
+        resultado = escultorica
+    };
+
+   if (document.getElementById("literaria").checked ) {
+    resultado = literaria
+    };
+
     while (  sumador1 < tabla.length ){
 
-    if (tabla[sumador1][4] == numOBRA){
-    document.getElementById("RnumObra").innerHTML += tabla[sumador1][0]+"<br>";
-    document.getElementById("Rlote").innerHTML += tabla[sumador1][1]+"<br>";
-    document.getElementById("Rnombre").innerHTML += tabla[sumador1][2]+"<br>";
-    document.getElementById("Rpreciosal").innerHTML += tabla[sumador1][3]+"<br>";
-    document.getElementById("Rcategoria").innerHTML += tabla[sumador1][4]+"<br>";
-    }
-
+    if (tabla[sumador1][4] == resultado ){
+    document.getElementById("RnumObra").innerHTML += tabla[sumador1][0]+"<br> <br>";
+    document.getElementById("Rlote").innerHTML += tabla[sumador1][1]+"<br> <br>";
+    document.getElementById("Rnombre").innerHTML += tabla[sumador1][2]+"<br> <br>";
+    document.getElementById("Rpreciosal").innerHTML += tabla[sumador1][3]+"<br>  <br>";
+    document.getElementById("Rcategoria").innerHTML += tabla[sumador1][4]+"<br> <br>";
+    precio = precio + parseInt(tabla[sumador1][3]); 
+    document.getElementById("total").innerHTML=precio+"€"
+}
     sumador1++;
     }
-
-    console.log(sumador1)
  
     }   
     
 function f_limpiar (){
-
     document.getElementById("RnumObra").innerHTML = "";
     document.getElementById("Rlote").innerHTML = "";
     document.getElementById("Rnombre").innerHTML = "";
     document.getElementById("Rpreciosal").innerHTML ="";
     document.getElementById("Rcategoria").innerHTML = "";
-    
-
+    document.getElementById("total").innerHTML="";
 }
 
 
