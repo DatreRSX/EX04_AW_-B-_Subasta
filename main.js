@@ -12,11 +12,11 @@ tabla[9] = ["0009","074","Mohai","32070","Escultorica"]
 
 
 function f_buscarNUM(){
-
+f_limpiar()
 var sumador = 0
 var numOBRA = document.getElementById("buscarNUMOBRA").value;
 
-while ( tabla[sumador][0] !=  numOBRA && sumador < tabla.length ){
+while ( tabla[sumador][0] != numOBRA && sumador < 9 ){
 sumador++;
 }
 
@@ -30,7 +30,42 @@ document.getElementById("Rcategoria").innerHTML += tabla[sumador][4]+"\n";
 
 }
 
+else{
+window.alert("No encontrado")
+}
 
+}
+
+function f_buscarTIPO(){
+    f_limpiar()
+    var sumador1 = 0
+    var numOBRA = document.getElementById("buscarNUMOBRA").value;
+    
+    while (  sumador1 < tabla.length ){
+
+    if (tabla[sumador1][4] == numOBRA){
+    document.getElementById("RnumObra").innerHTML += tabla[sumador1][0]+"<br>";
+    document.getElementById("Rlote").innerHTML += tabla[sumador1][1]+"<br>";
+    document.getElementById("Rnombre").innerHTML += tabla[sumador1][2]+"<br>";
+    document.getElementById("Rpreciosal").innerHTML += tabla[sumador1][3]+"<br>";
+    document.getElementById("Rcategoria").innerHTML += tabla[sumador1][4]+"<br>";
+    }
+
+    sumador1++;
+    }
+
+    console.log(sumador1)
+ 
+    }   
+    
+function f_limpiar (){
+
+    document.getElementById("RnumObra").innerHTML = "";
+    document.getElementById("Rlote").innerHTML = "";
+    document.getElementById("Rnombre").innerHTML = "";
+    document.getElementById("Rpreciosal").innerHTML ="";
+    document.getElementById("Rcategoria").innerHTML = "";
+    
 
 }
 
